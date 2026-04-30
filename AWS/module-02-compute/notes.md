@@ -4,157 +4,118 @@
 
 ## 📌 What is Compute in Cloud?
 
-Compute refers to the processing power required to run applications.
+Compute in cloud refers to the processing power required to run applications using cloud-based resources instead of physical servers.  
 
-In cloud computing, you don’t need physical servers. Instead, you use virtual machines and managed services provided by cloud platforms.
+It allows users to launch virtual machines or use managed services without investing in hardware.
 
 ---
 
 ## ⚙️ Types of Compute Services
 
-### 1. Virtual Machines (VMs)
-- Virtual version of a physical computer
-- Run applications, OS, and software
+### Virtual Machines (VMs)  
+Virtual machines are software-based computers that run operating systems and applications just like physical machines.  
 
-📌 Example:
-- AWS EC2
-- Azure Virtual Machines
-- GCP Compute Engine
+They provide full control over the environment and are widely used for hosting applications.
 
 ---
 
-### 2. Containers
-- Lightweight environment to run applications
-- Faster and more efficient than VMs
+### Containers  
+Containers are lightweight environments that package an application along with its dependencies, making it easy to run consistently across different systems.  
 
-📌 Example:
-- Docker
-- Kubernetes
+They are faster and more efficient compared to virtual machines.
 
 ---
 
-### 3. Serverless Computing
-- No need to manage servers
-- Code runs only when triggered
+### Serverless Computing  
+Serverless computing allows developers to run code without managing servers, as the cloud provider handles infrastructure, scaling, and availability.  
 
-📌 Example:
-- AWS Lambda
-- Azure Functions
-- Google Cloud Functions
+It is ideal for event-driven applications.
 
 ---
 
 ## 🖥️ Amazon EC2 (Elastic Compute Cloud)
 
-EC2 is a core AWS service that provides resizable virtual servers in the cloud.
+Amazon EC2 provides scalable virtual servers in the cloud, allowing users to run applications with full control over configurations.  
 
-### Key Features:
-- Launch virtual servers (instances)
-- Choose OS (Linux/Windows)
-- Full control over configuration
-- Scalable (increase/decrease instances anytime)
+It is suitable for applications requiring flexibility and long-running workloads.
 
 ---
 
 ## 🔧 EC2 Instance Types
 
-Different instance types are designed for different workloads:
+Different EC2 instance types are designed for specific workloads such as general-purpose, compute-optimized, memory-optimized, and storage-optimized tasks.  
 
-- General Purpose → Balanced (web apps)
-- Compute Optimized → High CPU (data processing)
-- Memory Optimized → Large RAM (databases)
-- Storage Optimized → High disk usage
+This helps in selecting the right balance of CPU, memory, and storage.
 
 ---
 
 ## 📦 EC2 Pricing Options
 
-### 1. On-Demand
-- Pay per use
-- No long-term commitment
+On-demand pricing allows users to pay for compute capacity as needed without commitment.  
 
-### 2. Reserved Instances
-- Lower cost with long-term commitment
+Reserved instances offer lower costs in exchange for long-term usage commitments.  
 
-### 3. Spot Instances
-- Cheapest option
-- Can be interrupted anytime
+Spot instances provide the lowest cost but can be interrupted by AWS when capacity is needed elsewhere.
 
 ---
 
 ## 📈 Scaling in Cloud
 
-### What is Scaling?
-Adjusting resources based on demand.
+Scaling refers to adjusting resources based on application demand to maintain performance and efficiency.  
 
-### Types:
-- Vertical Scaling → Increase power of one server
-- Horizontal Scaling → Add more servers
-
-📌 Cloud mainly uses **horizontal scaling**
+Vertical scaling increases the capacity of a single machine, while horizontal scaling adds more machines to distribute the load.
 
 ---
 
 ## 🔁 Auto Scaling
 
-Automatically adjusts number of instances based on demand.
+Auto Scaling automatically adjusts the number of EC2 instances based on traffic patterns, ensuring optimal performance and cost efficiency.  
 
-### Benefits:
-- Handles traffic spikes
-- Reduces cost
-- Improves performance
+It helps maintain application availability during traffic spikes.
 
 ---
 
 ## ⚖️ Load Balancing
 
-Distributes incoming traffic across multiple servers.
+Load balancing distributes incoming traffic across multiple servers to prevent overloading and ensure high availability.  
 
-### Benefits:
-- Prevents overload
-- Improves availability
-- Ensures reliability
-
-📌 Example:
-- AWS Elastic Load Balancer (ELB)
+It improves performance and reliability of applications.
 
 ---
 
 ## 🧠 Key Takeaways
 
-- Compute = processing power for applications
-- EC2 is the main compute service in AWS
-- Multiple pricing models available
-- Auto Scaling + Load Balancer = high availability system
-- Serverless removes server management completely
+Compute services provide the processing power required to run applications in the cloud.  
+
+Amazon EC2 is a core service that offers flexible virtual servers.  
+
+Auto Scaling and Load Balancing are essential for building scalable and highly available systems.  
+
+Serverless and containers simplify application deployment and reduce operational effort.
 
 ---
 
 ## 🎯 Interview Questions
 
-### Q1. What is EC2?
-EC2 is a service that provides virtual servers in the cloud.
+### Q1. What is compute in cloud?  
+Compute in cloud refers to using cloud-based resources to run applications instead of physical hardware.
 
 ---
 
-### Q2. Difference between VM and Containers?
-
-- VM → Full OS, heavier
-- Container → Lightweight, faster
+### Q2. What is Amazon EC2?  
+Amazon EC2 is a service that provides scalable virtual servers in the cloud.
 
 ---
 
-### Q3. What is serverless computing?
-A model where you run code without managing servers.
+### Q3. What is the difference between virtual machines and containers?  
+Virtual machines run a full operating system, while containers are lightweight and share the host OS, making them faster and more efficient.
 
 ---
 
-### Q4. What is Auto Scaling?
-Automatically increases/decreases resources based on demand.
+### Q4. What is Auto Scaling?  
+Auto Scaling automatically adjusts the number of resources based on demand to maintain performance and reduce cost.
 
 ---
 
-### Q5. What is Load Balancing?
-Distributing traffic across multiple servers to improve performance.
-
----
+### Q5. What is load balancing?  
+Load balancing distributes traffic across multiple servers to ensure reliability and prevent overload.
