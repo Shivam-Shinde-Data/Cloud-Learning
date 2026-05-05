@@ -134,3 +134,5 @@ AWS Organizations is a service used to centrally manage multiple AWS accounts wi
 
 ### Q5. What are Service Control Policies (SCPs)?  
 SCPs are policies that define the maximum permissions allowed across AWS accounts in an organization.
+
+---
